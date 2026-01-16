@@ -1,0 +1,23 @@
+{
+    "name": "gbadev",
+    "dockerComposeFile": "./docker-compose.yml",
+    "service": "main",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "C_Cpp.default.includePath": [
+                    "${workspaceFolder}/**",
+                    "/opt/devkitpro/libgba/include/**"
+                ],
+                "files.associations": {
+                    "*.s": "gnu-asm"
+                }
+            },
+            "extensions": [
+                "ms-vscode.cpptools-extension-pack",
+                "quzhen.gnu-asm-syntax"
+            ]
+        }
+    }
+}

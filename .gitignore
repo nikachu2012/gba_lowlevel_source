@@ -1,0 +1,7 @@
+*.gba
+*.elf
+*.sav
+build
+.DS_Store
+Thumbs.db
+*.o
