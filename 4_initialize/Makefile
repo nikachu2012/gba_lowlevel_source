@@ -14,7 +14,7 @@ $(OUT): $(OBJS)
 	$(OBJCOPY) -O binary out.elf $@
 
 %.o: %.c
-	$(CC) -O0 -c -mcpu=arm7tdmi -o $@ $<
+	$(CC) -c -mcpu=arm7tdmi -o $@ $<
 
 %.o: %.s
 	$(AS) -mcpu=arm7tdmi -o $@ $<
