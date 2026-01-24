@@ -1,7 +1,5 @@
-.cpu arm7tdmi
-
-.global _start
-.section .header
+    .cpu arm7tdmi
+    .section .header
 _start:
     @ ROMヘッダー
     b       main     @ 0x00 エントリーポイント

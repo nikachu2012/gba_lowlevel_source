@@ -1,7 +1,5 @@
-.cpu arm7tdmi
-
-.global _start
-.section .header
+    .cpu arm7tdmi
+    .section .header
 _start:
     @ ROMヘッダー
     b       main     @ 0x00 エントリーポイント
@@ -26,7 +24,7 @@ _start:
     .space  26       @ 0xC6 未使用領域
     b       main     @ 0xE0 JOYBUS用のエントリーポイント
 
-.section .text
+    .section .text
 main:
     b       main     @ 無限ループ
     .space  1024     @ サイズが小さいとMultibootで送れないので大きくする
