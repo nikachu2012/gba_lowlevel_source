@@ -10,7 +10,7 @@ extern void drawPixel(int x, int y, unsigned short s);
 
 extern const uint8_t _ProggyClean_start[];
 extern const uint8_t _ProggyClean_end[];
-extern const uint32_t _binary_ProggyClean_bin_size;
+extern const uint32_t _ProggyClean_size;
 
 /**
  * @brief 1文字を指定座標に出力
